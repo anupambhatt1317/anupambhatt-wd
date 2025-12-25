@@ -4,33 +4,64 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
-/* NAVIGATION BAR*/
-nav {
+#navbar {
+    border:2px slod black;
+    padding:10px 20px;
     display: flex;
+    justify-content:start;
     align-items:center;
-    color: rgb(238, 20, 27);
-    text-decoration: none;
-    margin-left: 20px;
+    text-decoration:solid;
+    color: #5d0303;
+    position: relative;
 }
-#logo {
-  margin:10px; 
+#navbar ul{
+    list-style:none;
+    display:flex;
+    gap:15px;
+    margin:0;
+    padding:0;
+}
+#navbar::before{
+    content:"";
+    background-color: rgb(144, 1, 4);
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.5;
+    
+}
+#navbar ul li a{
+    display:block;
+    padding:3px 22px;
+    color: #01030a;
+    text-decoration:solid;
+    align-items: baseline;
+    text-align: center;
+    border-radius:50px;
+}
+#navbar ul li a:hover{
+    color:rgb(1, 7, 11);
+    background-color: #ddd;
 }
 #logo img{
-
+  margin:34px 45px; 
+   height:200px;
+   align-items:;
 }
 
-.login {
-    background: #ff4c29;
+#login {
+    background: #2107eb;
     padding: 8px 15px;
     border-radius: 5px;
 }
 
-/* HERO SECTION WITH BACKGROUND IMAGE */
-.hero {
-    height: 90vh;
+/* HOME SECTION WITH BACKGROUND IMAGE */
+#home{
+    padding:3px 200px;
+    height: 40vh;
     background-image: 
-        linear-gradient(rgba(232, 14, 14, 0.6), rgba(255, 3, 3, 0.6)),
+        linear-gradient(rgba(17, 2, 2, 0.6), rgba(141, 4, 4, 0.6)),
         url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1WImDCjE5OsNhFYglH7YYbKISBcqrJvPeeQ&s");
     background-size: cover;
     background-position: center;
@@ -42,25 +73,28 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration-thickness:inherit;
+    opacity:0.89;
 }
-
-.hero h1 {
-    font-size: 48px;
+#home h1{
+    color:white;
+    text-align:centre;
 }
-
-.hero p {
-    margin: 15px 0;
-    font-size: 18px;
+#home p{
+    color:white;
+    text-align:centre;
+    font: size 1.5em;
 }
-
-.hero button {
+#home button {
     padding: 12px 25px;
     border: none;
-    background: #111010;
+    background: #1105fe;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    border:2px solid black;
+    margin:17px;
 }
 
 /* PRODUCTS */
@@ -103,7 +137,7 @@ nav {
 .product button {
     margin-top: 10px;
     padding: 8px 15px;
-    background: #ff4c29;
+    background: #ec0505;
     color: white;
     border: none;
     cursor: pointer;
