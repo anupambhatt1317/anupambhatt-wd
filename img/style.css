@@ -39,6 +39,8 @@
     align-items: baseline;
     text-align: center;
     border-radius:50px;
+    font-size: 40px;
+    font-weight: 600px;
 }
 #navbar ul li a:hover{
     color:rgb(1, 7, 11);
@@ -96,8 +98,18 @@
     border:2px solid black;
     margin:17px;
 }
+#promotion img{
+height:400px;
+width:100%;
+}
+#promotion p{
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: #ec0505;
+    font-size: 50px;
+}
 
-/* PRODUCTS */
+/*PRODUCTS */
 .products {
     padding: 50px;
     text-align: center;
@@ -150,4 +162,8 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+}
+#section h1{
+    font-style: italic;
+    font-size: medium;
 }
